@@ -1,16 +1,53 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset='utf-8'>
-<title>Artavyn - Daily AI News</title>
-<link rel='stylesheet' href='style.css'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARTAVYN</title>
+  <meta name="description" content="ARTAVYN — Exploring what humans and AI can become together.">
+  <style>
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;background:#000;color:#f5f5f5}
+    body{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace
+    }
+    .terminal{width:min(920px,calc(100% - 48px));margin:0 auto;padding:64px 0}
+    .brand{
+      margin-bottom:64px;
+      font-size:clamp(2rem,6vw,4.8rem);
+      font-weight:700;
+      letter-spacing:.12em
+    }
+    h1{
+      max-width:850px;
+      margin:0 0 40px;
+      font-size:clamp(1.45rem,3.2vw,2.7rem);
+      line-height:1.25;
+      font-weight:500;
+      letter-spacing:-.025em
+    }
+    .modules{margin:0 0 72px;color:#fff;font-size:.9rem;line-height:1.7}
+    .status{margin:0;color:#777;font-size:.82rem}
+    .status span{color:#fff}
+    .cursor{display:inline-block;animation:blink 1.05s steps(1,end) infinite}
+    @keyframes blink{50%{opacity:0}}
+    @media(max-width:600px){
+      .terminal{width:min(100% - 32px,920px);padding:48px 0}
+      .brand{margin-bottom:48px}
+      .modules{margin-bottom:56px}
+    }
+    @media(prefers-reduced-motion:reduce){.cursor{animation:none}}
+  </style>
 </head>
 <body>
-<h1>Artavyn - Daily AI News</h1>
-<ul>
-<li><a href='gpt-4-revolutionizing-ai-language-processing.html'><strong>AI Breakthrough: Revolutionizing Natural Language Processing with GPT-4</strong></a> (AI)<br><small>2025-05-22</small></li>
-<li><a href='global-economy-2023-inflation-and-innovation.html'><strong>Global Economic Trends: Navigating Uncertainty in 2023</strong></a> (Economy)<br><small>2025-05-22</small></li>
-<li><a href='apple-unveils-revolutionary-ar-glasses.html'><strong>Apple Unveils Revolutionary AR Glasses: A Leap into the Future of Augmented Reality</strong></a> (Tech)<br><small>2025-05-22</small></li>
-</ul>
+  <main class="terminal">
+    <div class="brand">ARTAVYN<span class="cursor">_</span></div>
+    <h1>&gt; Exploring what humans and AI can become together.</h1>
+    <p class="modules">research / experiments / agents / human-ai</p>
+    <p class="status"><span>&gt;</span> in progress...</p>
+  </main>
 </body>
 </html>
